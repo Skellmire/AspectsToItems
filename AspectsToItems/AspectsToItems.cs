@@ -5,7 +5,8 @@ using RoR2;
 using UnityEngine;
 using Mono.Cecil.Cil;
 using MonoMod.Cil;
-using EnigmaticThunder;
+using R2API;
+using R2API.Utils;
 using BepInEx.Configuration;
 using System.Security;
 using System.Security.Permissions;
@@ -15,8 +16,9 @@ using System.Security.Permissions;
 
 namespace AspectsToItems
 {
-	[BepInDependency("com.EnigmaDev.EnigmaticThunder")]
-	[BepInPlugin("com.Skell.AspectsToItems", "Aspects To Items", "1.0.0")]
+	[BepInDependency("com.bepis.r2api")]
+	[R2APISubmoduleDependency("LanguageAPI")]
+	[BepInPlugin("com.Skell.AspectsToItems", "Aspects To Items", "1.0.1")]
 	public class AspectsToItems : BaseUnityPlugin
 	{
 		public void Awake()
@@ -173,10 +175,10 @@ namespace AspectsToItems
 
 		public static void YellowAspectDef(EquipmentDef OriginalAspect, string NameToken, string PickupToken, string DescriptionToken, string LoreToken)
 		{
-			EnigmaticThunder.Modules.Languages.Add(OriginalAspect.ToString().ToUpper() + "_NAME", NameToken);
-			EnigmaticThunder.Modules.Languages.Add(OriginalAspect.ToString().ToUpper() + "_PICKUP", PickupToken);
-			EnigmaticThunder.Modules.Languages.Add(OriginalAspect.ToString().ToUpper() + "_DESC", DescriptionToken);
-			EnigmaticThunder.Modules.Languages.Add(OriginalAspect.ToString().ToUpper() + "_LORE", LoreToken);
+			LanguageAPI.Add(OriginalAspect.ToString().ToUpper() + "_NAME", NameToken);
+			LanguageAPI.Add(OriginalAspect.ToString().ToUpper() + "_PICKUP", PickupToken);
+			LanguageAPI.Add(OriginalAspect.ToString().ToUpper() + "_DESC", DescriptionToken);
+			LanguageAPI.Add(OriginalAspect.ToString().ToUpper() + "_LORE", LoreToken);
 
 			if (OriginalAspect != null)
 			{
@@ -201,10 +203,10 @@ namespace AspectsToItems
 
 		public static void YellowAspectDef(EquipmentDef OriginalAspect, string[] NewLanguageTokens)
 		{
-			EnigmaticThunder.Modules.Languages.Add(OriginalAspect.ToString().ToUpper() + "_NAME", NewLanguageTokens[0]);
-			EnigmaticThunder.Modules.Languages.Add(OriginalAspect.ToString().ToUpper() + "_PICKUP", NewLanguageTokens[1]);
-			EnigmaticThunder.Modules.Languages.Add(OriginalAspect.ToString().ToUpper() + "_DESC", NewLanguageTokens[2]);
-			EnigmaticThunder.Modules.Languages.Add(OriginalAspect.ToString().ToUpper() + "_LORE", NewLanguageTokens[3]);
+			LanguageAPI.Add(OriginalAspect.ToString().ToUpper() + "_NAME", NewLanguageTokens[0]);
+			LanguageAPI.Add(OriginalAspect.ToString().ToUpper() + "_PICKUP", NewLanguageTokens[1]);
+			LanguageAPI.Add(OriginalAspect.ToString().ToUpper() + "_DESC", NewLanguageTokens[2]);
+			LanguageAPI.Add(OriginalAspect.ToString().ToUpper() + "_LORE", NewLanguageTokens[3]);
 
 			if (OriginalAspect != null)
 			{

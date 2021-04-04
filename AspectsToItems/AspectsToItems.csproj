@@ -23,9 +23,6 @@
     <Reference Include="BepInEx.Preloader">
       <HintPath>..\..\..\..\Documents\Modding\RoR2 Mods\References\BepInEx.Preloader.dll</HintPath>
     </Reference>
-    <Reference Include="EnigmaticThunder">
-      <HintPath>..\..\..\..\Documents\Modding\RoR2 Mods\References\EnigmaticThunder.dll</HintPath>
-    </Reference>
     <Reference Include="MMHOOK_Assembly-CSharp">
       <HintPath>..\..\..\..\Documents\Modding\RoR2 Mods\References\MMHOOK_Assembly-CSharp.dll</HintPath>
     </Reference>
@@ -49,6 +46,9 @@
     </Reference>
     <Reference Include="MonoMod.Utils">
       <HintPath>..\..\..\..\Documents\Modding\RoR2 Mods\References\MonoMod.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="R2API">
+      <HintPath>..\..\..\..\Documents\Modding\RoR2 Mods\References\R2API.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine">
       <HintPath>..\..\..\..\Documents\Modding\RoR2 Mods\References\UnityEngine.dll</HintPath>
