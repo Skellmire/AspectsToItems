@@ -8,6 +8,9 @@
     <Reference Include="0Harmony">
       <HintPath>..\..\..\..\Documents\Modding\RoR2 Mods\References\0Harmony.dll</HintPath>
     </Reference>
+    <Reference Include="0Harmony20">
+      <HintPath>..\..\..\..\Documents\Modding\RoR2 Mods\References\0Harmony20.dll</HintPath>
+    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\Documents\Modding\RoR2 Mods\References\Assembly-CSharp.dll</HintPath>
     </Reference>
@@ -22,6 +25,9 @@
     </Reference>
     <Reference Include="BepInEx.Preloader">
       <HintPath>..\..\..\..\Documents\Modding\RoR2 Mods\References\BepInEx.Preloader.dll</HintPath>
+    </Reference>
+    <Reference Include="HarmonyXInterop">
+      <HintPath>..\..\..\..\Documents\Modding\RoR2 Mods\References\HarmonyXInterop.dll</HintPath>
     </Reference>
     <Reference Include="MMHOOK_Assembly-CSharp">
       <HintPath>..\..\..\..\Documents\Modding\RoR2 Mods\References\MMHOOK_Assembly-CSharp.dll</HintPath>
